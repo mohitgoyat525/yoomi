@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoomi</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/images/svg/favicon.svg" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        container: {
+          center: true,
+          screens: {
+            sm: "992px",
+            md: "1140px",
+            lg: "1140px",
+            xl: "1140px",
+            "2xl": "1140px",
+          },
+        },
+        extend: {
+           fontSize: {
+      '3xl': '52px',
+      
+    },
+          colors: {
+            lightWhite:'#F8FDFF',
+            offGreen:'#076787',
+            
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="max-w-[1920px] mx-auto">
+    <section class="relative bg-lightWhite">
+     <header class="max-lg:mx-32 max-md:mx-0 mx-0">
+      <div class="container">
+        <nav class="pt-5 max-sm:pt-3">
+          <div class="max-w-[1114px] relative z-50 mx-auto">
+            <div class="justify-between flex items-center">
+              <div class="max-sm:ml-[5px]">
+                <a href="/">
+                  <img class="pointer-events-none ps-3" src="./assets/images/svg/logo-img.svg"
+                    alt="Logo" />
+                </a>
+              </div>
+              <div onclick="navmenu()"
+                class="lg:hidden cursor-pointer overflow-hidden z-10 w-7 h-6 flex flex-col justify-between mr-3">
+                <span id="nav_line_1"
+                  class="w-full h-1 bg-black origin-left transition-all duration-300 rounded-md"></span>
+                <span id="nav_line_out_side" class="w-full h-1 bg-black transition-all duration-300 rounded-md"></span>
+                <span id="nav_line_2"
+                  class="w-full h-1 transition-all duration-300 bg-black origin-left rounded-md"></span>
+              </div>
+              <div id="mobile_view"
+                class="max-lg:fixed flex justify-center items-center max-lg:bg-white max-lg:w-full max-lg:h-full max-lg:-top-full max-lg:-right-full transition-all duration-300">
+              <ul class="flex  max-lg:flex-col items-center gap-11">
+                <li class="font-medium text-lg leading-[116%] text-black"><a href="">About Us</a></li>
+                <li class="font-medium text-lg leading-[116%] text-black"><a href="">News</a></li>
+                <li class="font-medium text-lg leading-[116%] text-black"><a href="">Contact Us</a></li>
+                <li> <button
+                  class="lg:hidden py-3 px-4 transition-all duration-300  rounded hover:text-offGreen hover:bg-white  border-offGreen border font-semibold text-base text-white bg-offGreen">
+                  Enter App
+                </button></li>
+              </ul>
+               <div class="max-lg:hidden ms-7 ">
+                <button
+                  class="py-3 px-4 transition-all duration-300  rounded hover:text-offGreen hover:bg-white  border-offGreen border font-semibold text-base text-white bg-offGreen">
+                  Enter App
+                </button>
+              </div>
+              </div>
+             
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <img src="/assets/images/svg/hero-secton-left-shadow.svg" alt="shadow" class="absolute left-0 pointer-events-none top-[33%]">
+    <img src="/assets/images/svg/hero-section-right-shadow.svg" alt="shadow" class="absolute right-0 pointer-events-none top-[41%]">
+    <div class="container">
+        <div class="max-2xl:pt-32 max-2xl:pb-24 pt-32 pb-24 max-lg:pt-20 max-lg:pb-12 max-md:pt-9 max-md:pb-6 relative z-20">
+            <img src="/assets/images/svg/right-shadow-img.svg" alt="shadow" class="right-0 absolute top-[44%] pointer-events-none">
+        <h1 class="text-center leading-[110%] font-normal  max-w-[832px] mx-auto  text-3xl max-lg:text-4xl  max-sm:text-2xl plus-jakarta-font"><span class="font-extrabold">Next Generation </span>Patient Engagement and RTM Solution✨</h1>
+       
+        <p class="text-center font-normal text-2xl leading-[110%] text-black opacity-[70%] pt-7">Industry leading AI motion-tracking technology</p>
+       
+        <div class="flex items-center justify-center max-2xl:my-14 my-14 max-lg:my-9 max-md:my-7 max-sm:my-5">
+        <div class="flex rounded  items-center max-w-[550px] mx-auto drop-shadow-[0px 4px 15px 0px #07678726] drop-shadow bg-white ">
+            <input type="email" placeholder="Enter Your Email" required class="py-3 ps-3 outline-none text-black opacity-[70%] font-normal text-base ">
+            <button class="m-1  py-3 px-4 transition-all duration-300  rounded hover:text-offGreen hover:bg-white  border-offGreen border font-semibold text-base text-white bg-offGreen">Get Started</button>
+        </div>
+        </div>
+        
+        </div>
+        
+    </div>
+</section>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
