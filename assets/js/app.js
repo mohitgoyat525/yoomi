@@ -9,3 +9,11 @@ const navmenu = () => {
     .classList.toggle("translate-x-8");
   document.body.classList.toggle("overflow-hidden");
 };
+$(".yoga-slider-first").slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  variableWidth: true,
+  nextArrow: ".next",
+  prevArrow:".prev",
+});

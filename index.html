@@ -6,6 +6,13 @@
   <title>Yoomi</title>
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="shortcut icon" href="/assets/images/svg/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -23,12 +30,13 @@
         extend: {
            fontSize: {
       '3xl': '52px',
-      
+      '40px':'40px',
+      '32px':'32px',
     },
           colors: {
             lightWhite:'#F8FDFF',
             offGreen:'#076787',
-            
+            lightGreen:'#82B2C2',
           }
         }
       }
@@ -36,7 +44,8 @@
   </script>
 </head>
 <body class="max-w-[1920px] mx-auto">
-    <section class="relative bg-lightWhite ">
+  <section class="">
+    <section class="relative bg-lightWhite md:h-[808px]">
      <header class="max-lg:mx-32 max-md:mx-0 mx-0">
       <div class="container">
         <nav class="pt-5 max-sm:pt-3">
@@ -80,11 +89,11 @@
         </nav>
       </div>
     </header>
-    <img src="/assets/images/svg/hero-secton-left-shadow.svg" alt="shadow" class="absolute left-0 pointer-events-none top-0">
-    <img src="/assets/images/svg/hero-section-right-shadow.svg" alt="shadow" class="absolute right-0 pointer-events-none top-5">
+    <img src="/assets/images/svg/hero-secton-left-shadow.svg" alt="shadow" class="absolute left-0 pointer-events-none top-48 max-sm:hidden">
+    <img src="/assets/images/svg/hero-section-right-shadow.svg" alt="shadow" class="absolute right-0 pointer-events-none top-56  max-sm:hidden">
     <div class="container">
         <div class="max-2xl:pt-32 max-2xl:pb-24 pt-32 pb-24 max-lg:pt-20 max-lg:pb-12 max-md:pt-9 max-md:pb-6 relative z-20">
-            <img src="/assets/images/svg/right-shadow-img.svg" alt="shadow" class="right-0 absolute top-[44%] pointer-events-none">
+            <img src="/assets/images/svg/right-shadow-img.svg" alt="shadow" class="right-0 absolute top-52 pointer-events-none  max-sm:hidden">
         <h1 class="text-center leading-[110%] font-normal  max-w-[832px] mx-auto  text-3xl max-lg:text-4xl  max-sm:text-2xl plus-jakarta-font"><span class="font-extrabold">Next Generation </span>Patient Engagement and RTM Solution✨</h1>
        
         <p class="text-center font-normal text-2xl leading-[110%] text-black opacity-[70%] pt-7">Industry leading AI motion-tracking technology</p>
@@ -101,22 +110,120 @@
     </div>
     <div class="bg-offGreen h-6"></div>
     <div class="relative">
-    <img src="/assets/images/svg/plant-shadow.svg" alt="plant-img" class="absolute left-11 -bottom-7">
+    <img src="/assets/images/svg/plant-shadow.svg" alt="plant-img" class="absolute left-11 -bottom-7  max-md:hidden">
     </div>
     <div class="container relative">
-        <img src="/assets/images/svg/small-palnt.svg" alt="plant" class="absolute right-0 -bottom-7">
+        <img src="/assets/images/svg/small-palnt.svg" alt="plant" class="absolute right-20 -bottom-7 max-md:hidden">
     </div>
-    <div class="flex items-center justify-center flex-col max-2xl:mt-14 max-2xl:pb-14 pb-14 mt-14 max-sm:mt-8 max-sm:pb-8">
-        <img src="/assets/images/svg/layer-group.svg" alt="layer">
-        
-    </div>
-    
+ 
+
 </section>
-<section class="relative">
-<div class="flex items-center justify-center">
-    <img src="/assets/images/png/yoga-pose-img.png" alt="yoga" class="absolute -top-[155px]">
-    </div>
 </section>
+<section class="transform -translate-y-36">
+        <div class="container px-3 pt-6">
+            <img class="max-w-[1052px] mx-auto w-full" src="./assets/images/png/yoga-pose-img.png" alt="yoga">
+        </div>
+        <div class="container ">
+          <div class="py-14">
+  <p class="text-center text-offGreen font-medium text-base leading-[118%]">Features</p>
+  <h2 class="text-center font-normal text-40px  leading-[110%] plus-jakarta-font pt-3">Explore Our <span class="font-semibold">Amazing Features </span></h2>
+  <p class="text-center font-normal leading-[150%] text-base max-w-[724px] mx-auto pt-2">Yoomi is more than just a regular remote monitoring solution. Our product supports patients and providers through every step of the rehabilitation process</p>
+</div>
+  <div class="flex border-b-2 rounded-e-3xl drop-shadow-2xl  relative z-20">
+    <div class="flex flex-wrap overflow-hidden ">
+    <div class="w-6/12 max-lg:w-full">
+      <div class=" px-4">
+        <p class="text-offGreen font-medium text-base leading-[118%]">Library</p>
+        <p class="font-normal text-32px leading-[110%] pt-2">Extensive Exercise<span class="font-semibold">Library</span></p>
+        <p class=" pt-5 flex items-center font-normal text-base text-black opacity-[70%] leading-[150%] gap-4 max-w-[394px] "><span><img class="min-w-5 min-h-5"  src="/assets/images/svg/check-box.svg" alt="check-box"></span>Utilize Yoomi’s HEP templates to quickly create and assign programs to your patients </p>
+        <p class="flex items-center font-normal text-base text-black opacity-[70%] leading-[150%] gap-4  "><span><img  class="min-w-5 min-h-5" src="/assets/images/svg/check-box.svg" alt="check-box"></span>Choose from our library of exercises for all patient cases </p>
+        <p class="flex items-center font-normal text-base text-black opacity-[70%] leading-[150%] gap-4  "><span><img  class="min-w-5 min-h-5" src="/assets/images/svg/check-box.svg" alt="check-box"></span>Use Yoomi’s industry-leading exercise generation tool to create your own exercises that track adherence and form in seconds </p>
+
+         <button
+                  class=" mt-9 py-4 px-5 transition-all duration-300  rounded hover:text-offGreen hover:bg-white  border-offGreen border font-semibold text-base text-white bg-offGreen">
+                 View the Library
+          </button>
+      </div>
+    </div>
+  <div class="w-6/12 relative  max-lg:w-full">
+          <div class="absolute bg-lightGreen min-w-[625px] min-h-[262px] -top-1/4 -right-1/4"></div>
+          <div class="yoga-slider-first">
+            <div>
+              <img class="w-full mt-11 "  src="./assets/images/png/slider-img.png" alt="slider-img">
+            </div>
+            <div>
+              <img  class="w-full mt-11" src="./assets/images/png/slider-img.png" alt="slider-img">
+            </div>
+            <div>
+              <img  class="w-full mt-11" src="./assets/images/png/slider-img.png" alt="slider-img">
+            </div>
+          </div>
+          <div class="flex  slick-arrow-buttons gap-6 py-6 relative z-30">
+
+                <button class="prev border hover:bg-lightGreen  bg-white items-center flex justify-center w-9 h-9 rounded-full cursor-pointer transition-all ease-linear duration-200 "><svg width="12" height="20" viewBox="0 0 12 20"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.0457 19.5608C11.3269 19.2795 11.4849 18.8981 11.4849 18.5003C11.4849 18.1026 11.3269 17.7211 11.0457 17.4398L3.62073 10.0148L11.0457 2.58982C11.319 2.30692 11.4702 1.92801 11.4667 1.53472C11.4633 1.14142 11.3056 0.765204 11.0275 0.487091C10.7493 0.208979 10.3731 0.0512277 9.97983 0.0478097C9.58654 0.0443917 9.20764 0.195583 8.92473 0.468821L0.439233 8.95432C0.158026 9.23561 5.35296e-05 9.61707 5.35248e-05 10.0148C5.35201e-05 10.4126 0.158026 10.794 0.439233 11.0753L8.92473 19.5608C9.20603 19.842 9.58749 20 9.98523 20C10.383 20 10.7644 19.842 11.0457 19.5608Z"
+                            fill="black" />
+                    </svg>
+
+                </button>
+                <button class="next  hover:bg-lightGreen  border bg-white  items-center flex justify-center w-9 h-9 rounded-full cursor-pointer transition-all ease-linear duration-200 "><svg width="12" height="20" viewBox="0 0 12 20"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.704443 19.5608C0.423236 19.2795 0.265263 18.8981 0.265263 18.5003C0.265263 18.1026 0.423236 17.7211 0.704443 17.4398L8.12944 10.0148L0.704442 2.58982C0.431205 2.30692 0.280014 1.92801 0.283431 1.53472C0.286849 1.14142 0.444601 0.765204 0.722714 0.487092C1.00083 0.208979 1.37704 0.0512277 1.77034 0.04781C2.16364 0.0443924 2.54254 0.195584 2.82544 0.468821L11.3109 8.95432C11.5921 9.23561 11.7501 9.61707 11.7501 10.0148C11.7501 10.4126 11.5921 10.794 11.3109 11.0753L2.82544 19.5608C2.54415 19.842 2.16269 20 1.76494 20C1.3672 20 0.985735 19.842 0.704443 19.5608Z"
+                            fill="black" />
+                    </svg>
+
+                </button>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <div class="relative z-10">
+  <img src="/assets/images/svg/slider-bootom-shodw-left.svg" alt="shadow" class="absolute left-0 -translate-y-32">
+</div>
+    </section>
+<div class="container">
+<div class="flex flex-wrap ">
+  <div class="w-6/12 max-lg:w-full py-28">
+    <div class="relative">
+      <img src="/assets/images/png/girl-yoga-pose-img.png" alt="girl" class="absolute -top-7 -left-5 pointer-events-none">
+      <img src="/assets/images/png/boy-yoga-pose-two.png" alt="yoga-pose-two pointer-events-none" >
+      <img src="/assets/images/png/graph-img.png" alt="graph" class="absolute -top-6 right-6 pointer-events-none">
+    </div>
+    <div class="bg-white flex justify-between max-w-[490px] py-5 px-5 border-b drop-shadow-[0px_-0.92px_17.51px_0px_#0000001A] border rounded-e-md">
+      <div class="flex items-center gap-3 ">
+      <p class="text-xs font-medium">Prone w/ Scapular Retraction</p>
+      <p class="text-xs font-medium">Sets <span class="font-medium text-offGreen text-base">2</span>/3</p>
+      <p class="text-xs font-medium">Reps <span class="font-medium text-offGreen text-base">2</span>12</p>
+      </div>
+      <a href=""><img src="/assets/images/svg/three-lines.svg" alt="lines" class=""></a>
+    </div>
+  </div>
+  <div class="w-6/12 max-lg:w-full">
+    <div class="">
+      <p class="text-offGreen font-medium text-base leading-[118%]">TRACKING</p>
+      <p class="leading-[120%] text-32px  font-normal pt-2 ">Cutting Edge Motion<span class="font-semibold">Tracking/Feedback</span></p>
+      <p class="flex items-center font-normal text-base text-black opacity-[70%] leading-[150%] gap-4 max-w-[361px] pt-5"><span><img class="min-w-5 min-h-5" src="/assets/images/svg/check-box.svg" alt="check-box"></span>Provides a holistic, real-time analysis of patient exercise form, capturing 300+ data points and critical metrics.</p>
+      <p class="flex items-center font-normal text-base text-black opacity-[70%] leading-[150%] gap-4 max-w-[403px]"><span><img class="min-w-5 min-h-5" src="/assets/images/svg/check-box.svg" alt="check-box"></span>Delivers immediate feedback and guidance to correct and improve exercise form</p>
+      <p class="flex items-center font-normal text-base text-black opacity-[70%] leading-[150%] gap-4 max-w-[371px]"><span><img class="min-w-5 min-h-5" src="/assets/images/svg/check-box.svg" alt="check-box"></span>Supported by the most accurate motion-tracking model designed for rehabilitation, Yoomi Vision</p>
+      <p class="flex items-center font-normal text-base text-black opacity-[70%] leading-[150%] gap-4 max-w-[476px]"><span><img class="min-w-5 min-h-5" src="/assets/images/svg/check-box.svg" alt="check-box"></span>Requires no custom hardware, sensors, or equipment</p>
+       <button
+                  class=" mt-9 py-4 px-5 transition-all duration-300  rounded hover:text-offGreen hover:bg-white  border-offGreen border font-semibold text-base text-white bg-offGreen">
+                 Test it Yourself
+          </button>
+    </div>
+  </div>
+</div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/assets/js/app.js"></script>
 </body>
 </html>

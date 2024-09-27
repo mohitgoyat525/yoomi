@@ -6,3 +6,22 @@ body{
 .plus-jakarta-font{
     font-family: "Plus Jakarta Sans", sans-serif;
 }
+.yoga-slider-first .slick-track{
+    display: flex !important;
+    gap: 32px !important;
+}
+
+
+.yoga-slider-first .slick-next {
+  right: -40px !important;
+}
+.yoga-slider-first .slick-prev {
+  left: -40px !important;
+}
+
+.next:hover path {
+  fill: white;
+}
+.prev:hover path {
+  fill: white;
+}
