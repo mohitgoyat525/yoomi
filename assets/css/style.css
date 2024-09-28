@@ -11,7 +11,9 @@ body{
     gap: 22px !important;
 }
 
-
+/* *{
+  outline: 2px solid red;
+} */
 .yoga-slider-first .slick-next {
   right: -40px !important;
 }
