@@ -15,5 +15,36 @@ $(".yoga-slider-first").slick({
   slidesToScroll: 1,
   variableWidth: true,
   nextArrow: ".next",
-  prevArrow:".prev",
+  prevArrow: ".prev",
+  responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      
+      },
+    },
+  
+  ],
+});
+
+$(document).ready(function () {
+  $(".big-slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: ".big-slider-sm", 
+    infinite: true,
+  });
+
+  $(".big-slider-sm").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: ".big-slider",
+    focusOnSelect: true,
+    infinite: true,
+    variableWidth: true,
+  });
 });
