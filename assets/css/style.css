@@ -27,3 +27,7 @@ body{
 .prev:hover path {
   fill: white;
 }
+.slick-track{
+  display: flex !important;
+  gap: 24px !important;
+}
