@@ -11,9 +11,9 @@ body{
     gap: 22px !important;
 }
 
-/* *{
-  outline: 2px solid red;
-} */
+*{
+  scroll-behavior: smooth;
+}
 .yoga-slider-first .slick-next {
   right: -40px !important;
 }
@@ -22,10 +22,10 @@ body{
 }
 
 .next:hover path {
-  fill: white;
+  stroke: white;
 }
 .prev:hover path {
-  fill: white;
+  stroke: white;
 }
 .slick-track{
   display: flex !important;
