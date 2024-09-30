@@ -29,20 +29,23 @@ $(".yoga-slider-first").slick({
   ],
 });
 
+
 $(document).ready(function () {
-  $(".big-slider").slick({
+  $(".big-img-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: ".big-slider-sm", 
+    asNavFor: ".second-row-slider",
     infinite: true,
   });
 
-  $(".big-slider-sm").slick({
-    slidesToShow: 4,
+  $(".second-row-slider").slick({
+    slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: ".big-slider",
+    asNavFor: ".big-img-slider",
+    arrows: false,
+    centerMode: true,
     focusOnSelect: true,
     infinite: true,
     variableWidth: true,
