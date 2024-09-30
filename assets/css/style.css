@@ -32,7 +32,7 @@ body{
   gap: 24px !important;
 }
 .second-row-slider .slick-track {
-  gap: 40px !important;
+  gap: 60px !important;
   display: flex !important;
   min-height: 144px !important;
   align-items: center !important;
@@ -40,11 +40,4 @@ body{
 .second-row-slider .slick-track .slick-current {
   scale: 1.5;
   border-radius: 4px !important;
-}
-.slider-box .slick-track {
-  display: flex !important;
-  gap: 35px !important;
-}
-.slider-box .slick-track .slick-slide {
-  max-width: 460px !important;
 }
