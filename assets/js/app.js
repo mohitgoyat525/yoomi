@@ -9,6 +9,7 @@ const navmenu = () => {
     .classList.toggle("translate-x-8");
   document.body.classList.toggle("overflow-hidden");
 };
+// second-slick-slider
 $(".yoga-slider-first").slick({
   infinite: true,
   slidesToShow: 1,
@@ -28,8 +29,7 @@ $(".yoga-slider-first").slick({
   
   ],
 });
-
-
+// Third slick-slider
 $(document).ready(function () {
   $(".big-img-slider").slick({
     slidesToShow: 1,
