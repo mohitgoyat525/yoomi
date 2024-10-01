@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
   scroll-behavior: smooth;
 }
-body{
-    font-family: "Inter", sans-serif;
+body {
+  font-family: "Inter", sans-serif;
 }
 
-.plus-jakarta-font{
-    font-family: "Plus Jakarta Sans", sans-serif;
+.plus-jakarta-font {
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .yoga-slider-first .slick-next {
@@ -27,7 +27,7 @@ body{
   stroke: white;
 }
 
-.slick-track{
+.slick-track {
   display: flex !important;
   gap: 24px !important;
 }
@@ -43,6 +43,9 @@ body{
   scale: 1.5;
   border-radius: 4px !important;
 }
-.footer-contacts:hover span{
-  transform:scale(1.2);
+.footer-contacts:hover span {
+  transform: scale(1.2);
+}
+.yoga-slider-first .draggable {
+  margin-right: -16px !important;
 }
