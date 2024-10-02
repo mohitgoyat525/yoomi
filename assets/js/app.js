@@ -38,6 +38,7 @@ $(".yoga-slider-first").slick({
      fade: true,
      asNavFor: ".small-img-slider",
      infinite: true,
+
    });
 
    $(".small-img-slider").slick({
@@ -47,6 +48,7 @@ $(".yoga-slider-first").slick({
      focusOnSelect: true,
      infinite: true,
      variableWidth: true,
+     arrows: false,
      responsive: [
        {
          breakpoint: 1024,
